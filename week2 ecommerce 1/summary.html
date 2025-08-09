@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Summary</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff3f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar {
+      background-color: #ffcce0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    header.navbar img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    header.navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .summary-page {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .summary-page h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+      margin-bottom: 30px;
+    }
+
+    .summary-box {
+      background-color: #fff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    .summary-box li {
+      font-size: 1.1rem;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .summary-box h2 {
+      margin-top: 25px;
+      color: #000;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #ff4d88;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #e6005c;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Dessert Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="summary-page">
+    <h1>Your Order Summary</h1>
+    <div class="summary-box" id="summary-container">
+      <!-- Summary content will be injected here -->
+    </div>
+    <a class="back-btn" href="order.html">Back to Order</a>
+  </main>
+
+  <script>
+    const summaryContainer = document.getElementById("summary-container");
+    const summary = JSON.parse(localStorage.getItem("orderSummary"));
+
+    if (!summary || !summary.items.length) {
+      summaryContainer.innerHTML = "<p>Your cart is empty.</p>";
+    } else {
+      let html = "<ul>";
+      summary.items.forEach(item => {
+        html += `<li><strong>${item.name}</strong>: ${item.quantity} x ₹${item.price} = ₹${item.total}</li>`;
+      });
+      html += "</ul>";
+      html += `<h2>Total: ₹${summary.total}</h2>`;
+      summaryContainer.innerHTML = html;
+    }
+  </script>
+</body>
+</html>

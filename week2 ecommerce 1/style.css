@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #ffcce0; /* light pink */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b30059; /* dark pink */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+.order-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: #fff0f5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item h3 {
+    margin: 10px 0 5px;
+}
+
+.item button {
+    background-color: #ff66a3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.item button:hover {
+    background-color: #e05591;
+}
+
+.cart {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fffafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.cart button:hover {
+  background-color: #e60000;
+}
+
+.summary-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.summary-page ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.summary-page li {
+  margin-bottom: 10px;
+}
+
+
+/* Hero background section */
+.hero {
+  background-image: url('images/back.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  color: #d63384;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Discount Banner */
+.discount {
+  background-color: #ffe0eb;
+  text-align: center;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #b30059;
+}
+
+/* Rotating Cake */
+.rotation-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff8fc;
+}
+
+.rotation-section h2 {
+  margin-bottom: 20px;
+  color: #cc0066;
+}
+
+.rotating-cake {
+  width: 200px;
+  height: 200px;
+  animation: rotateCake 10s linear infinite;
+}
+
+@keyframes rotateCake {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;       /* Makes it a circle */
+  object-fit: cover;        /* Ensures image fills circle properly */
+  border: 2px solid #fff;   /* Optional: white border for cleaner look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.brand-name {
+  font-family: 'Pacifico', cursive; /* beautiful handwritten font */
+  font-size: 28px;
+  color: #d63384; /* vibrant pink */
+}
+
+#about {
+  background-color: #fff0f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  color: #c2185b;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  line-height: 1.6;
+}
+
+#about {
+  background-color: #ffe6f0;
+  padding: 60px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  color: #c2185b;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.about-text .tagline {
+  font-style: italic;
+  color: #d81b60;
+  font-weight: bold;
+}
+
+.about-image img {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+#gallery {
+  background-color: #fff8f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#gallery h2 {
+  color: #af2e57;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#gallery p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.cake-name {
+  font-weight: bold;
+  color: #c2185b;
+  font-size: 1rem;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+#chef {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff8f1;
+  font-family: 'Great Vibes', cursive;
+  
+  background-color: #f4c2d7;
+  padding: 60px 20px;
+}
+
+
+
+
+.chef-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chef-card {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chef-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.chef-card:hover img {
+  transform: scale(1.05);
+}
+
+.chef-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.chef-card:hover .chef-overlay {
+  transform: translateY(0);
+}
+
+.chef-overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #d32f2f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#chefs {
+  background-image: url('images/chefs-background.png'); /* Save your uploaded image here */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Great Vibes', cursive;
+}
+
+#chefs h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#chefs p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.icons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.insta {
+  color: #c13584;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.insta:hover {
+  transform: scale(1.2);
+}
+
+.heart {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+#reviews {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+ 
+  background-color: #fcdce7;
+  padding: 60px 20px;
+}
+#reviews h2, #reviews p {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.review-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.review-card {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.review-card:hover img {
+  transform: scale(1.05);
+}
+
+.review-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.review-card:hover .review-overlay {
+  transform: translateY(0);
+}
+
+.review-overlay p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #ff9800;
+}
+
+#contact {
+  padding: 50px 20px;
+  background-color:lightpink;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff7f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1 1 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input {
+  flex: 1 1 48%;
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e06a3e;
+}
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  font-size: 1.2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#gallery {
+  background-color: lightpink; /* Make sure image is placed correctly */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+#gallery h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#gallery p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .form-group input {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+

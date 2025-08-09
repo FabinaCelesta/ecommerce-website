@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Cakes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Dessert Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+         <li><a href="index.html#chef">Chef</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="order-page">
+    <h1>Order Your Favorite Cakes</h1>
+    <div class="items">
+      <!-- Cake 1 -->
+      <div class="item">
+        <img src="images/chocolate.png" alt="Chocolate Cake" />
+        <h3>Chocolate Cake</h3>
+        <p>₹500</p>
+        <button onclick="addToCart('Chocolate Cake', 500)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 2 -->
+      <div class="item">
+        <img src="images/red.webp" alt="Red Velvet Cake" />
+        <h3>Red Velvet Cake</h3>
+        <p>₹450</p>
+        <button onclick="addToCart('Red Velvet Cake', 450)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 3 -->
+      <div class="item">
+        <img src="images/vanilla.avif" alt="Vanilla Cake" />
+        <h3>Vanilla Cake</h3>
+        <p>₹400</p>
+        <button onclick="addToCart('Vanilla Cake', 400)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 4 -->
+      <div class="item">
+        <img src="images/black.png" alt="Black Forest Cake" />
+        <h3>Black Forest Cake</h3>
+        <p>₹480</p>
+        <button onclick="addToCart('Black Forest Cake', 480)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 5 -->
+      <div class="item">
+        <img src="images/white.png" alt="White Forest Cake" />
+        <h3>White Forest Cake</h3>
+        <p>₹470</p>
+        <button onclick="addToCart('White Forest Cake', 470)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 6 -->
+      <div class="item">
+        <img src="images/brookie.jpg" alt="Brookie" />
+        <h3>Brookie</h3>
+        <p>₹390</p>
+        <button onclick="addToCart('Brookie', 390)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 7 -->
+      <div class="item">
+        <img src="images/browniw.jpg" alt="Brownie" />
+        <h3>Brownie</h3>
+        <p>₹520</p>
+        <button onclick="addToCart('Brownie', 520)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 8 -->
+      <div class="item">
+        <img src="images/caranel.png" alt="Caramel Cake" />
+        <h3>Caramel Cake</h3>
+        <p>₹430</p>
+        <button onclick="addToCart('Caramel Cake', 430)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 9 -->
+      <div class="item">
+        <img src="images/lotus.png" alt="Lotus Biscoff Cake" />
+        <h3>Lotus Biscoff Cake</h3>
+        <p>₹460</p>
+        <button onclick="addToCart('Lotus Biscoff Cake', 460)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 10 -->
+      <div class="item">
+        <img src="images/mirror.png" alt="Mirror Glaze Cake" />
+        <h3>Mirror Glaze Cake</h3>
+        <p>₹490</p>
+        <button onclick="addToCart('Mirror Glaze', 490)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 11 -->
+      <div class="item">
+        <img src="images/oreo.png" alt="Oreo Cake" />
+        <h3>Oreo Cake</h3>
+        <p>₹510</p>
+        <button onclick="addToCart('Oreo Cake', 510)">Add to Cart</button>
+      </div>
+
+      <!-- Cake 12 -->
+      <div class="item">
+        <img src="images/rose.jpg" alt= "Rosemilk Cake" />
+        <h3>Rosemilk Cake</h3>
+        <p>₹550</p>
+        <button onclick="addToCart('Rosemilk Cake', 550)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: ₹0</p>
+    </div>
+  </main>
+  <div style="text-align:center; margin-top: 20px;">
+  <button onclick="checkout()" style="padding: 10px 20px; background-color: #ff66a3; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Checkout
+  </button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

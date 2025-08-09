@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Desserts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+  <img src="images/logo.jpg" alt="Dessert Logo" />
+  <span class="brand-name">Cakey</span>
+</div>
+
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#chef">Chef</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+  <!-- Hero Section with Background -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <i><h1>Welcome to Delicious Desserts</h1></i>
+      <i><p>Enjoy our handcrafted cakes and desserts made with love.</p></i>
+      
+    </div>
+  </section>
+
+  <!-- Discount Banner -->
+  <section class="discount">
+    <i><h2>🎉 Summer Special Offer: 20% OFF on all orders above ₹1000!</h2></i>
+  </section>
+
+  <!-- Rotating Cake -->
+  <section class="rotation-section">
+    <i><h2>Our Star Delight: Black Forest Cake</h2></i>
+    <img src="images/black.png" alt="Rotating Cake" class="rotating-cake">
+  </section>
+
+  <section id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <i><h2>About Us</h2></i>
+      <p><strong>At Delicious Desserts</strong>, we don’t just bake cakes — we create edible memories.</p>
+      <p>Founded with a passion for pastries and a sprinkle of love, we believe every celebration deserves a sweet centerpiece.</p>
+      <p>From classic flavors to custom creations, our desserts are handcrafted to delight taste buds and warm hearts.</p>
+      <p class="tagline">Because life’s too short to skip dessert!</p>
+    </div>
+    <div class="about-image">
+      <img src="images/truffle.webp" alt="Delicious Cake">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Other Sections -->
+  <section id="gallery">
+  <h2>Gallery</h2>
+  <p>Feast your eyes on some of our delicious creations!</p>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/bento.png" alt="Bento Cake">
+      <div class="overlay">
+        <span class="cake-name">Bento Cake</span>
+        <span class="heart" onclick="likeCake('Bento Cake')">❤️</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wedding.png" alt="Wedding Cake">
+      <div class="overlay">
+        <span class="cake-name">Wedding Cake</span>
+        <span class="heart" onclick="likeCake('Wedding Cake')">❤️</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/birth.jpg" alt="Birthday Cake">
+      <div class="overlay">
+        <span class="cake-name">Birthday Cake</span>
+        <span class="heart" onclick="likeCake('Birthday Cake')">❤️</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/cup.png" alt="Cupcakes">
+      <div class="overlay">
+        <span class="cake-name">Cupcakes</span>
+        <span class="heart" onclick="likeCake('Cupcakes')">❤️</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/dream.jpg" alt="Dream Cake">
+      <div class="overlay">
+        <span class="cake-name">Dream Cake</span>
+        <span class="heart" onclick="likeCake('Dream Cake')">❤️</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/marble.webp" alt="Marble Cake">
+      <div class="overlay">
+        <span class="cake-name">Marble Cake</span>
+        <span class="heart" onclick="likeCake('Marble Cake')">❤️</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="chef">
+  <h2>Our Chefs</h2>
+  <p>Meet the artists behind our sweet creations!</p>
+  <div class="chef-grid">
+    <div class="chef-card">
+      <img src="images/zock.cms" alt="Chef A">
+      <div class="chef-overlay">
+        <h3>Chef Zock</h3>
+        <div class="icons">
+          <a href="https://instagram.com" target="_blank" class="insta">📸</a>
+          <span onclick="likeChef('Chef Zock')" class="heart">❤️</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chef-card">
+      <img src="images/andy.jpg" alt="Chef Andy">
+      <div class="chef-overlay">
+        <h3>Chef Andy Allen</h3>
+        <div class="icons">
+          <a href="https://instagram.com" target="_blank" class="insta">📸</a>
+          <span onclick="likeChef('Chef Andy Allen')" class="heart">❤️</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chef-card">
+      <img src="images/reynold.jpg" alt="Chef Reynold">
+      <div class="chef-overlay">
+        <h3>Chef Reynold</h3>
+        <div class="icons">
+          <a href="https://instagram.com" target="_blank" class="insta">📸</a>
+          <span onclick="likeChef('Chef Reynold')" class="heart">❤️</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+  <p>Here's what our happy customers have to say!</p>
+  <div class="review-grid">
+    
+    <div class="review-card">
+      <img src="images/tom.jpeg" alt="Customer 1">
+      <div class="review-overlay">
+        <p>"The cupcakes were divine! Perfectly sweet and moist."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="images/girl.avif" alt="Customer 2">
+      <div class="review-overlay">
+        <p>"Absolutely loved the chocolate tart. Highly recommended!"</p>
+        <div class="stars">⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="images/chris.jpeg" alt="Customer 3">
+      <div class="review-overlay">
+        <p>"Great flavors and wonderful packaging. Will order again!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contact">
+  <i><h2>Contact Us</h2></i>
+  <p>We’d love to hear from you! Please fill out the form below.</p>
+
+  <form class="contact-form" onsubmit="showPopup(event)">
+    <div class="form-group">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <input type="tel" placeholder="Phone Number" required>
+    </div>
+
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Popup message -->
+  <div id="popup" class="popup">Message Sent!</div>
+</section>
+
+
+</main>
+
+
+    <footer>
+        <marquee  direction="right"><p>&copy; Delicious Desserts.With Love Cakey.</p></marquee>
+    </footer>
+
+    <script>
+  function likeCake(cakeName) {
+    alert(`You liked the ${cakeName}! ❤️`);
+  }
+</script>
+<script>
+  function likeChef(name) {
+    alert(`You liked ${name}! ❤️`);
+  }
+</script>
+
+<script>
+  function showPopup(event) {
+    event.preventDefault(); // prevent actual submission
+    const popup = document.getElementById("popup");
+    popup.style.display = "block";
+
+    setTimeout(() => {
+      popup.style.display = "none";
+      document.querySelector(".contact-form").reset(); // clear form
+    }, 2500);
+  }
+</script>
+
+
+
+</body>
+</html>
